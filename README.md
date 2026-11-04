@@ -133,6 +133,15 @@ Perilaku: tidak ada layar login, tidak ada request `/precheck`, langsung ke main
 
 ---
 
+## Release
+
+| Release | Isi | Link |
+|---|---|---|
+| `v1.0-patch-a` | `SzaX_patched_always_ok.apk` | https://github.com/Ikyletwar/szax-launcher-re/releases/tag/v1.0-patch-a |
+| `v1.0-patch-b` | `SzaX_patched_keyless.apk` | https://github.com/Ikyletwar/szax-launcher-re/releases/tag/v1.0-patch-b |
+
+---
+
 ## Artefak
 
 | File | SHA-256 | Signature |
