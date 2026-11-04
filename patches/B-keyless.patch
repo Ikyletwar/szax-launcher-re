@@ -1,0 +1,24 @@
+--- orig_smali/smali/com/szax/launcher/MainActivity.smali	2026-11-05 04:24:20.385919471 +0700
++++ smaliB/smali/com/szax/launcher/MainActivity.smali	2026-11-05 04:02:51.433959790 +0700
+@@ -6070,6 +6070,8 @@
+     invoke-virtual {p1, v1}, Lcom/szax/launcher/MainActivity$Btn;->setText(Ljava/lang/CharSequence;)V
+ 
+     .line 282
++    const/4 p2, 0x1
++
+     if-nez p2, :cond_0
+ 
+     invoke-virtual {p0, p3}, Lcom/szax/launcher/MainActivity;->toast(Ljava/lang/String;)V
+@@ -9234,7 +9236,11 @@
+     invoke-virtual {p0}, Lcom/szax/launcher/MainActivity;->loadDriverCache()V
+ 
+     .line 188
+-    invoke-virtual {p0}, Lcom/szax/launcher/MainActivity;->showLogin()V
++    const-string v0, "SZAXPREMIUM"
++
++    iput-object v0, p0, Lcom/szax/launcher/MainActivity;->sessionKey:Ljava/lang/String;
++
++    invoke-virtual {p0}, Lcom/szax/launcher/MainActivity;->showMain()V
+ 
+     .line 189
+     invoke-virtual {p0}, Lcom/szax/launcher/MainActivity;->checkRoot()V

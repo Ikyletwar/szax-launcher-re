@@ -1,0 +1,13 @@
+# Signing material — never commit
+*.keystore
+*.jks
+*.p12
+
+# Build outputs
+build/
+dist/
+*.idsig
+
+# Python
+__pycache__/
+*.pyc
